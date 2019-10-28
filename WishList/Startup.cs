@@ -24,15 +24,16 @@ namespace WishList
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
 
-            app.UseMvcWithDefaultRoute();
-
-            if(env.IsDevelopment())
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            } else
+            }
+            else
             {
                 app.UseExceptionHandler("Home/Error");
             }
+
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
