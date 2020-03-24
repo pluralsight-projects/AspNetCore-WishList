@@ -21,6 +21,5 @@ namespace WishList
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .Build();
-
     }
 }
