@@ -8,8 +8,7 @@
     @{ 
         foreach (var item in Model)
         {
-            <li>@item.Description</li>
-            <a asp-action="delete" asp-route-id="@item.Id">Delete</a>
+            <li>@item.Description <a asp-action="delete" asp-route-id="@item.Id">delete</a></li>
         }
     }
 </ul>
